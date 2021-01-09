@@ -171,6 +171,14 @@ h2 {
     }
 }
 
+.snowfall{
+    position: fixed;
+    width: 100%;
+    height: 100%;
+    overflow: hidden;
+    pointer-events: none;
+}
+
 /*! SECTION MAIN BANNER START */
 .main_banner_wrapper {
     background-image: url(../img/header-bg.png);
@@ -180,7 +188,9 @@ h2 {
     padding: 320px 0 60px;
     height: 100vh;
 
+
     .main_banner_content {
+
         h4 {
             font-style: normal;
             font-weight: bold;
@@ -330,8 +340,9 @@ h2 {
                     top: calc(50% - 125px);
                     left: 65%;
                     animation-name: square;
-                    animation-duration: 2s;
+                    animation-duration: 5s;
                     animation-delay: 3s;
+                    animation-iteration-count: infinite;
                 }
             }
 
@@ -348,6 +359,7 @@ h2 {
     background-position: top center;
     background-size: cover;
     padding: 100px 0;
+    height: 100vh;
 
     h4 {
         font-style: normal;
@@ -412,6 +424,435 @@ h2 {
     }
 }
 /*! SECTION OUR TEAM END */
+
+/*! SECTION BOOK TABLE START */
+.book_table_wrapper {
+    padding: 100px 0;
+    height: 100vh;
+
+    .book_table {
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+
+        .book_table_item {
+            width: calc(100%/2);
+            h2 {
+                color: #000000;
+            }
+
+            .form_wrapper{
+                margin-top: 30px;
+                form{
+                    .forma{
+                        display: flex;
+                        flex-direction: column;
+
+                        .form-group{
+                            display: flex;
+                            flex-direction: row;
+                            justify-content: stretch;
+                            margin: 10px -5px;
+
+                            input{
+                                display: block;
+                                padding: 20px 15px;
+                                color: rgba(51, 51, 51, 0.5);
+                                border: none;
+                                outline: none;
+                                background: #E5E5E5;
+                                border-radius: 5px;
+                                margin: 0 5px;
+                                width: calc(100%/2 - 10px);
+                            }
+                        }
+                    }
+                }
+            }
+
+            .img_wrapper {
+                position: relative;
+
+                img {
+                    display: block;
+                }
+
+                &:after {
+                    content: '';
+                    display: block;
+                    position: absolute;
+                    width: 250px;
+                    height: 250px;
+                    border: 20px solid #e8c300;
+                    border-radius: 5px;
+                    top: calc(50% - 125px);
+                    left: 65%;
+                    animation-name: square;
+                    animation-duration: 2s;
+                    animation-delay: 3s;
+                }
+            }
+        }
+    }
+}
+/*! SECTION BOOK TABLE END */
+
+/*! SECTION SPECIALTIES START */
+.specialties_wrapper {
+    background-image: url(../img/specialty1bg.png);
+    background-repeat: no-repeat;
+    background-position: top center;
+    background-size: cover;
+    padding: 100px 0;
+    height: 100vh;
+
+    h4 {
+        font-style: normal;
+        font-weight: bold;
+        font-size: 12px;
+        line-height: 14px;
+        text-align: center;
+        letter-spacing: 0.5em;
+        text-transform: uppercase;
+        color: #ffffff;
+    }
+
+    .specialties {
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+
+        .specialties_item {
+            .title {
+                font-style: normal;
+                font-weight: 600;
+                font-size: 18px;
+                line-height: 28px;
+                text-align: center;
+                color: #ffffff;
+            }
+
+            .descr {
+                font-style: normal;
+                font-weight: 400;
+                font-size: 16px;
+                line-height: 22px;
+                text-align: center;
+                color: #ffffff;
+            }
+
+            .img_wrapper {
+                position: relative;
+
+                img {
+                    display: block;
+                }
+
+                &:after {
+                    content: '';
+                    display: block;
+                    position: absolute;
+                    width: 250px;
+                    height: 250px;
+                    border: 20px solid #e8c300;
+                    border-radius: 5px;
+                    top: calc(50% - 125px);
+                    right: 65%;
+                    animation-name: square;
+                    animation-duration: 2s;
+                    animation-delay: 3s;
+                }
+            }
+
+        }
+    }
+}
+/*! SECTION SPECIALTIES END */
+
+/*! SECTION DELICIOUS MENU START */
+.delicious_menu_wrapper{
+    padding: 100px 0;
+
+    h2{
+        color: #000000;
+    }
+
+    .title {
+        font-style: normal;
+        font-weight: 600;
+        font-size: 18px;
+        line-height: 28px;
+        text-align: center;
+        color: #000000;
+        margin: 30px 0;
+    }
+
+    .delicious_menu{
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        margin: 0 -20px;
+
+        .menu{
+            list-style: none;
+            margin: 0 20px;
+            padding: 0;
+
+            li{
+                display: flex;
+                flex-direction: row;
+                align-items: center;
+                font-family: 'Banny', sans-serif;
+                font-size: 18px;
+                line-height: 18px;
+                color: #333333;
+
+                .price{
+                    margin-left: 10px;
+                }
+            }
+        }
+    }
+}
+/*! SECTION DELICIOUS MENU END */
+
+/*! SECTION PRIVATE EVENTS START */
+.private_events_wrapper {
+    background-image: url(../img/specialty2bg.png);
+    background-repeat: no-repeat;
+    background-position: top center;
+    background-size: cover;
+    padding: 100px 0;
+    height: 100vh;
+
+    h4 {
+        font-style: normal;
+        font-weight: bold;
+        font-size: 12px;
+        line-height: 14px;
+        text-align: center;
+        letter-spacing: 0.5em;
+        text-transform: uppercase;
+        color: #ffffff;
+    }
+
+    .private_events {
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+
+        .private_events_item {
+
+            .img_wrapper {
+                position: relative;
+
+                img {
+                    display: block;
+                }
+
+                &:after {
+                    content: '';
+                    display: block;
+                    position: absolute;
+                    width: 250px;
+                    height: 250px;
+                    border: 20px solid #e8c300;
+                    border-radius: 5px;
+                    top: calc(50% - 125px);
+                    right: 65%;
+                    animation-name: square;
+                    animation-duration: 2s;
+                    animation-delay: 3s;
+                }
+
+                &.right{
+                    &:after {
+                        content: '';
+                        display: block;
+                        position: absolute;
+                        width: 250px;
+                        height: 250px;
+                        border: 20px solid #e8c300;
+                        border-radius: 5px;
+                        top: calc(50% - 125px);
+                        left: 65%;
+                        animation-name: square;
+                        animation-duration: 2s;
+                        animation-delay: 3s;
+                    }
+                }
+            }
+
+            h4{
+                font-family: 'Banny', sans-serif;
+                font-size: 24px;
+                line-height: 12px;
+                text-indent: 20px;
+                text-transform: uppercase;
+                color: #FFFFFF;
+
+            }
+        }
+    }
+}
+/*! SECTION PRIVATE EVENTS END */
+
+/*! SECTION PRIVATE EVENTS CONTENT START */
+.private_events_content_wrapper{
+    .private_events_content{
+        display: flex;
+        flex-direction: row;
+        width: 100%;
+
+        img{
+            display: block;
+            width: calc(100%/4);
+        }
+    }
+}
+/*! SECTION PRIVATE EVENTS CONTENT END */
+
+/*! SECTION CONTACT START */
+.contact_wrapper{
+    padding: 100px 0;
+
+    h2{
+        color: #000000;
+    }
+
+    .title {
+        font-style: normal;
+        font-weight: 600;
+        font-size: 18px;
+        line-height: 28px;
+        text-align: center;
+        color: #000000;
+        margin: 30px 0;
+    }
+
+    .form_wrapper{
+        margin-top: 30px;
+        form{
+            .forma{
+                display: flex;
+                flex-direction: column;
+
+                .form-group{
+                    display: flex;
+                    flex-direction: row;
+                    justify-content: center;
+                    margin: 10px -5px;
+
+                    input{
+                        display: block;
+                        padding: 20px 15px;
+                        color: rgba(51, 51, 51, 0.5);
+                        border: none;
+                        outline: none;
+                        background: #E5E5E5;
+                        border-radius: 5px;
+                        margin: 0 5px;
+                        width: calc(100%/3 - 10px);
+                    }
+
+                    textarea{
+                        display: block;
+                        padding: 20px 15px;
+                        color: rgba(51, 51, 51, 0.5);
+                        border: none;
+                        outline: none;
+                        background: #E5E5E5;
+                        border-radius: 5px;
+                        width: 100%;
+                        resize: none;
+                        margin: 0 5px 10px;
+                    }
+                }
+            }
+        }
+    }
+}
+/*! SECTION CONTACT END */
+
+/*! SECTION MAP START */
+.map_wrapper{
+    height: 475px;
+}
+/*! SECTION MAP END */
+
+/*! MODAL START */
+.modal {
+    width: 1000px;
+    margin: 0 auto;
+    text-align: left;
+
+    .remodal-close {
+        left: unset;
+        right: 0;
+        width: 60px;
+        height: 60px;
+        background-image: url(../img/close.png);
+        background-repeat: no-repeat;
+        background-position: center;
+
+        &:before {
+            display: none;
+            content: none;
+        }
+    }
+
+    h2{
+        color: #000000;
+    }
+
+    .feedback_form{
+        margin-top: 30px;
+        form{
+            .forma{
+                display: flex;
+                flex-direction: column;
+
+                .form-group{
+                    display: flex;
+                    flex-direction: row;
+                    justify-content: stretch;
+                    margin: 10px -5px;
+
+                    input{
+                        display: block;
+                        padding: 20px 15px;
+                        color: rgba(51, 51, 51, 0.5);
+                        border: none;
+                        outline: none;
+                        background: #E5E5E5;
+                        border-radius: 5px;
+                        margin: 0 5px;
+                        width: calc(100%/2 - 10px);
+                    }
+                }
+            }
+        }
+    }
+
+}
+/*! MODAL END */
+
+/*! FOOTER START */
+.footer_wrapper{
+    padding: 40px 0;
+    background: rgba(0, 0, 0, 0.9);
+
+    h4{
+        margin: 0;
+        font-style: normal;
+        font-weight: normal;
+        font-size: 12px;
+        line-height: 12px;
+        text-align: center;
+        color: rgba(255, 255, 255, 0.5);
+    }
+}
+/*! FOOTER END */
 
 @keyframes anchor {
     from {

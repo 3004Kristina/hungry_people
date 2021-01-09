@@ -1,6 +1,6 @@
 <!--FOOTER START-->
 <footer class="footer_wrapper">
-
+    <h4>© Copyright Mindblister  2019</h4>
 </footer>
 <!--FOOTER END-->
 <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
